@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean-gh-pages" : "rm -rf dist/*",
+    "build-gh-pages" : "vite build --base=/my-vue-app/",
+    "dist-gh-pages" : "rm -rf docs/* && cp -R dist/* docs/"
   },
   "dependencies": {
     "vue": "^3.5.13"
